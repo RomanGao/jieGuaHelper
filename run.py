@@ -71,7 +71,9 @@ def get_gua():
     dt_gua64, ls_gua64 = Gua.get_gua64()
     if gx.strip() in dt_gua64:
         gua_name = dt_gua64[gx.strip()]
-        print("输入的卦象，卦名为："+gua_name)
+        print("输入的卦象的：")
+        print("卦名为：【"+gua_name+ "】(上"+Gua.num_to_gua(gx[3:6])
+              +"下"+Gua.num_to_gua(gx[0:3])+gua_name+ "卦)")
         get_yao(gx, nd)
     else:
         print("输入的卦象，卦名为："+"未知卦")
