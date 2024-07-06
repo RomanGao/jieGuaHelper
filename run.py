@@ -27,7 +27,7 @@ def get_yao(gx, nd):
         if (gx[int(nd[0])-1]=='0' and gx[int(nd[1])-1]=='0') \
             or (gx[int(nd[0])-1]=='1' and gx[int(nd[1])-1]=='1'):
             printYaoResult(gx, nd[1])
-        elif gx[int(nd[0])]=='0':
+        elif gx[int(nd[0])-1]=='0':
             printYaoResult(gx, nd[0])
         else:
             printYaoResult(gx, nd[1])
