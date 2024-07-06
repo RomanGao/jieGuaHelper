@@ -33,8 +33,11 @@ def get_yao(gx, nd):
             printYaoResult(gx, nd[1])
     elif len(nd) == 3:
         printYaoResult(gx, nd[1])
-    elif len(nd) == 4:
-        printYaoResult(gx, nd[0])
+    elif len(nd) == 4: #最下面的非动
+        temp = '123456'
+        for i in nd:
+            temp = temp.replace(i,'')
+        printYaoResult(gx, temp[0])
     elif len(nd) == 5: #取非动
         temp = '123456'
         for i in nd:
