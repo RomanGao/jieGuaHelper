@@ -4,7 +4,7 @@ num2Char = ['-','初','二','三','四','五','上']
 
 def get6or9(gx, nd):
     index = int(nd)-1
-    if gx[index] == 0:
+    if gx[index] == '0':
         return "六"
     else:
         return "九"
